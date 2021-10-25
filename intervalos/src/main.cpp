@@ -11,11 +11,29 @@ using std::endl;
 #include <iomanip>
 using std::setprecision;
 
-// Se desejar, crie funções aqui, antes do main().
-
-int main(void)
-{
-    // TODO: Adicione aqui a sua solução.
-
-    return 0;
+int main(){
+    int x, total = 0;
+    int percent_val[5] = {0,0,0,0,0};
+    while (cin >> std::ws >> x) {
+        total++;
+        if(x < 0 or x >= 100) {
+            percent_val[4]++;
+        }
+        else if (x >= 0 && x < 25){
+            percent_val[0]++;
+        }
+        else if (x >= 25 && x < 50) {
+            percent_val[1]++;
+        }
+        else if (x >= 50 && x < 75) {
+            percent_val[2]++;
+        }
+        else if(x >= 75 && x < 100) {
+            percent_val[3]++;
+        }
+    }
+    for (int i : percent_val) {
+        float value = (float) i / (float) total * 100.0;
+        cout << std::setprecision(4) << value << endl;
+    }
 }

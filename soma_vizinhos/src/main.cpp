@@ -7,10 +7,22 @@
 using std::cout;
 using std::cin;
 using std::endl;
+using namespace std;
 
-int main( void )
-{
-    // TODO: Adicione seu código aqui. 
-
-    return 0;
+int main(){
+    int m,n,sum = 0;
+    while (cin >> ws >> m >> n) {
+        sum = m;
+        if(n >= 0){
+            for (int i = 1; i < n; ++i) {
+                sum += m + i;
+            }
+        }
+        else{
+            for (int i = 1; i < abs(n); ++i) {
+                sum += m - i;
+            }
+        }
+        cout << sum << endl;
+    }
 }

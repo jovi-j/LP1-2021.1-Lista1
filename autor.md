@@ -2,15 +2,15 @@
 
 Preencha os dados abaixo para identificar a autoria do trabalho.
 
-- Nome: *\<__insira seu nome aqui__>*
-- Email: *\<insira seu email aqui>*
-- Turma: *\<insira sua turma aqui>*
+- Nome: João Victor Silva de Oliveira
+- Email: nean@protonmail.com
+- Turma: IMD0030-T01
 
 # Questões Finalizadas
 
-- [ ] Negativos 5
-- [ ] Soma Vizinhos
-- [ ] Intervalos
+- [x] Negativos 5
+- [x] Soma Vizinhos
+- [x] Intervalos
 - [ ] Fibonacci
 - [ ] Minmax
 - [ ] Inverter
